@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    stream:
+      function:
+        definition: producer
+      bindings:
+        output:
+          destination: test
+          contentType: application/json
+      kafka:
+        binder:
+          brokers:
+            - localhost:9092
